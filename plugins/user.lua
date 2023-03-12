@@ -47,5 +47,12 @@ return {
         },
       })
     end
+  },
+  {
+    "kylechui/nvim-surround",
+    lazy = false,
+    opts = function()
+      require("nvim-surround").setup()
+    end
   }
 }
