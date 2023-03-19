@@ -18,6 +18,7 @@ return {
         config = {
           workspaces = {
             notes = "~/projects/notes",
+            university = "~/projects/tads",
           },
         },
       },
