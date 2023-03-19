@@ -5,9 +5,14 @@ return {
   event = "VeryLazy",
   opts = {
     load = {
-      ["core.defaults"] = {},       -- Loads default behaviour
-      ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
-      ["core.keybinds"] = {},       -- Adds default keybindings
+      ["core.defaults"] = {}, -- Loads default behaviour
+      ["core.norg.concealer"] = {
+        config = {
+          icon_preset = "diamond",
+          markup_preset = "safe",
+        }
+      },                      -- Adds pretty icons to your documents
+      ["core.keybinds"] = {}, -- Adds default keybindings
       ["core.norg.completion"] = {
         config = {
           engine = "nvim-cmp",
