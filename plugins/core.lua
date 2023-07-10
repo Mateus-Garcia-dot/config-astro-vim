@@ -12,7 +12,6 @@ return {
         dashboard.button("n", " " .. " New file", ":ene <BAR> startinsert <CR>"),
         dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
         dashboard.button("g", " " .. " Find text", ":Telescope live_grep <CR>"),
-        dashboard.button("s", "勒" .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
         dashboard.button("q", " " .. " Quit", ":qa<CR>"),
       }
       for _, button in ipairs(dashboard.section.buttons.val) do
@@ -35,7 +34,7 @@ return {
 
       dashboard.config.layout = {
         dashboard.section.terminal,
-        { type = "padding", val = 5 },
+        { type = "padding", val = 6 },
         dashboard.section.header,
         { type = "padding", val = 1 },
         dashboard.section.buttons,
