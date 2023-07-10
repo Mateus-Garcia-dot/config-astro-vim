@@ -54,5 +54,20 @@ return {
     opts = function()
       require("nvim-surround").setup()
     end
+  },
+  {
+    'karb94/neoscroll.nvim',
+    lazy = false,
+    opts = function()
+      require('neoscroll').setup()
+    end
+  },
+  {
+    'aserowy/tmux.nvim',
+    lazy = false,
+    opts = function()
+      require('tmux').setup()
+    end
   }
+
 }
